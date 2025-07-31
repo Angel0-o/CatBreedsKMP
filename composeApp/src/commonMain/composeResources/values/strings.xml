@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    // CatBreeds
+    <string name="cat_breeds">Cat Breeds</string>
+    <string name="favorites">Favorites</string>
+    <string name="breed_list">Breed List</string>
+    <string name="retry">Retry</string>
+    <string name="no_favorite_books">No favorite breeds yet.</string>
+    <string name="error_message">Error: %1$s</string>
+    <string name="error_no_internet">You're offline. Showing cached data.</string>
+    // CatBreedDetail
+    <string name="temperament_detail"><b>Temperament:</b> %1$s</string>
+    <string name="origin_detail"><b>Origin:</b> %1$s</string>
+    <string name="life_span_detail"><b>Life Span:</b> %1$s yrs</string>
+    // Login
+    <string name="cat_login">Cat Login</string>
+    <string name="login">Login</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="invalid_credentials">Invalid credentials</string>
+    <string name="password_must_contain">Password must contain:
+        • At least 8 characters
+        • 1 uppercase letter
+        • 1 number
+        • 1 symbol
+    </string>
+    // Icons
+    <string name="error_icon">ErrorIcon</string>
+    <string name="back_icon">BackIcon</string>
+    <string name="detail_icon">DetailIcon</string>
+    <string name="login_icon">LogInIcon</string>
+    // CustomUi
+    <string name="confirm_button">Confirm</string>
+</resources>

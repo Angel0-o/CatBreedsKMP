@@ -1,0 +1,36 @@
+CREATE TABLE FavoriteBreeds (
+  id TEXT NOT NULL PRIMARY KEY
+);
+
+insertFavorite:
+INSERT INTO FavoriteBreeds(id) VALUES (?);
+
+deleteFavorite:
+DELETE FROM FavoriteBreeds WHERE id = ?;
+
+selectAllFavorites:
+SELECT id FROM FavoriteBreeds;
+
+isFavorite:
+SELECT id FROM FavoriteBreeds WHERE id = ?;
+
+CREATE TABLE CachedBreed (
+    id TEXT NOT NULL PRIMARY KEY,
+    name TEXT NOT NULL,
+    description TEXT NOT NULL,
+    origin TEXT NOT NULL,
+    temperament TEXT NOT NULL,
+    lifeSpan TEXT NOT NULL,
+    imageUrl TEXT,
+    isFavorite TEXT
+);
+
+insertCachedBreed:
+INSERT INTO CachedBreed(id, name, description, origin, temperament, lifeSpan, imageUrl, isFavorite)
+VALUES(?, ?, ?, ?, ?, ?, ?, ?);
+
+selectAllCachedBreeds:
+SELECT * FROM CachedBreed;
+
+clearCachedBreeds:
+DELETE FROM CachedBreed;
